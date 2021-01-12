@@ -14,6 +14,10 @@ export class NavigationDetailPage implements OnInit {
   }
 
   backToNavigation() {
-    this.router.navigateByUrl("'/navigation'");
+    this.router.navigateByUrl('/navigation');
+  }
+
+  navigateToProfile() {
+    this.router.navigate(['/profile', { name: 'Sacha'}]);
   }
 }

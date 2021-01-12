@@ -31,21 +31,42 @@ export class CalculatorPage implements OnInit {
   calculate() {
     this.calculation += this.currentNr;
     this.result = eval(this.calculation);
+    this.calculation = "";
   }
 
   sum() {
-    this.calculation += "+";
+    this.addSign("+");
   }
 
   subtract() {
-    this.calculation += "-";
+    this.addSign("-");
   }
 
   multiply() {
-    this.calculation += "*";
+    this.addSign("*");
   }
 
   divide() {
-    this.calculation += "/";
+    this.addSign("/");
+  }
+
+  addSign(sign) {
+    let length = this.calculation.length;
+    let lastChar = this.calculation.substr(length - 1);
+    switch (lastChar) {
+      case '+':
+        this.calculation = this.calculation.replace(lastChar, "");
+        break;
+      case '-':
+        this.calculation = this.calculation.replace(lastChar, "");
+        break;
+      case '*':
+        this.calculation = this.calculation.replace(lastChar, "");
+        break;
+      case '/':
+        this.calculation = this.calculation.replace(lastChar, "");
+        break;
+    }
+    this.calculation += sign;
   }
 }

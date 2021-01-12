@@ -46,6 +46,11 @@ export class AppComponent implements OnInit {
       title: 'Calculator',
       url: '/calculator',
       icon: 'calculator'
+    },
+    {
+      title: 'Profile',
+      url: '/profile',
+      icon: 'accessibility'
     }
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];

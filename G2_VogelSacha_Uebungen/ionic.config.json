@@ -1,0 +1,7 @@
+{
+  "name": "G2_VogelSacha_Uebungen",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

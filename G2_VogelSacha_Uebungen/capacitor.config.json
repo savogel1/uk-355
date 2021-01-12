@@ -1,0 +1,13 @@
+{
+  "appId": "io.ionic.starter",
+  "appName": "G2_VogelSacha_Uebungen",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "src",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {}
+}

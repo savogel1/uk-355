@@ -1,10 +1,10 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>NavigationDetail</ion-title>
+    <ion-icon (click)="backToNavigation()" name="chevron-back-outline"></ion-icon>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-button (click)="backToNavigation()">Zurück</ion-button>
   <ion-button (click)="navigateToProfile()">Profile</ion-button>
 </ion-content>

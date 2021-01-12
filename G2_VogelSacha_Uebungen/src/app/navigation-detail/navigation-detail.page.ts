@@ -18,6 +18,6 @@ export class NavigationDetailPage implements OnInit {
   }
 
   navigateToProfile() {
-    this.router.navigate(['/profile', { name: 'Sacha'}]);
+    this.router.navigate(['/profile', { username: 'savogel1'}]);
   }
 }
